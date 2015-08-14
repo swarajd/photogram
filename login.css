@@ -1,0 +1,46 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #fafafa;
+}
+
+.login-section {
+  width: 375px;
+  height: 500px;
+
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #edeeee;
+
+  padding: 20px;
+}
+
+.login-logo-container {
+  display: flex;
+  justify-content: center;
+
+  width: 335px;
+}
+
+.login-logo {
+  margin: 30px auto 15px;
+  width: 126px;
+  height: 30px;
+}
+
+.login-form-container {
+  width: 335px;
+}
+
+.form-group {
+  width: 300px;
+}
+
+.submit {
+
+}

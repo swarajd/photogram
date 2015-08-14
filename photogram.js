@@ -20,10 +20,13 @@ Router.route('/feed', function() {
 });
 
 AccountsTemplates.configureRoute('signIn', {
+    template: 'Home',
     redirect: function(){
         var user = Meteor.user();
         if (user) {
           Router.go('/feed');
+        } else {
+          Router.go('/');
         }
     }
 });
