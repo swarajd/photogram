@@ -3,7 +3,7 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
-  
+  process.env.MAIL_URL="smtp://swaraj.dhumne%40gmail.com:edfqgtrcrtsbokxk@smtp.gmail.com:587/"; 
 }
 
 Router.route('/', function () {
@@ -11,7 +11,7 @@ Router.route('/', function () {
   if (user) {
     Router.go('/feed');
   } else {
-    this.render('Home');
+    Router.go('/sign-in');
   }
 });
 
@@ -26,7 +26,25 @@ AccountsTemplates.configureRoute('signIn', {
         if (user) {
           Router.go('/feed');
         } else {
-          Router.go('/');
+          Router.go('/sign-in');
         }
     }
+});
+
+AccountsTemplates.configure({
+  sendVerificationEmail: true,
+  enforceEmailVerification: true,
+  showForgotPasswordLink: true
+});
+
+AccountsTemplates.configureRoute('verifyEmail', {
+  template: 'ValidationForm'
+});
+
+AccountsTemplates.configureRoute('forgotPwd', {
+  template: 'ValidationForm'
+});
+
+AccountsTemplates.configureRoute('resetPwd', {
+  template: 'ValidationForm'
 });

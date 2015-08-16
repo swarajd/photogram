@@ -1,0 +1,38 @@
+.nav-bar {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid #edeeee;
+  background-color: #fff;
+}
+
+.nav-container-feed {
+  width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-container-profile {
+  width: 975px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-bar{
+  height: 80px;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 30px;
+}

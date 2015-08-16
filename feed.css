@@ -1,0 +1,92 @@
+.feed-content {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.post {
+  margin-top: 50px;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.post-header {
+  height: 64px;
+  line-height: 64px;
+  padding: 0px 15px;
+}
+
+.post-username {
+  color: #125688;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.post-icon {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #cccfd0;
+  margin-right: 10px;
+}
+
+.post-date {
+  text-align: right;
+  color: #a5a7aa;
+}
+
+.post-picture {
+  width: 638px;
+}
+
+.post-footer {
+  padding: 0px 15px;
+}
+
+.post-likes {
+  padding: 10px 0px;
+  text-align: left;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.post-likes-num {
+  color: #125688;
+  font-weight: bold;
+}
+
+.post-likes-text {
+  color: #4b4f54;
+}
+
+.post-comment {
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.post-like-comment {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.like-button {
+  background: none;
+  outline: 0;
+  border: 0;
+  background-image: url(https://instagramstatic-a.akamaihd.net/bluebar/61d683a/cache/sprites/core-sprites-175663.png);
+  background-repeat: no-repeat;
+  background-position: -392px -92px;
+  height: 44px;
+  width: 44px;
+}
+
+.post-add-comment {
+  padding-left: 10px;
+  background-color: transparent;
+  border: 0px solid;
+  width: 100%;
+}
+
+.post-add-comment:focus{
+    outline: 0;
+}

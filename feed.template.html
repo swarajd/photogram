@@ -1,3 +1,51 @@
 <template name="Feed">
+  <div class="nav-bar">
+    <div class="row nav-container-feed">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="logo-container">
+          <img src="photogram.png" alt="" class="logo">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="search-bar">
+          <!-- <input type="text" class="form-control" placeholder="search" > -->
+          {{> atNavButton }}
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 username">swarajd</div>
+    </div>
+  </div>
+  <div class="feed-content">
+    <div class="post">
+      <div class="post-header">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="me.jpg" alt="" class="post-icon">
+            <span class="post-username">swarajd</span>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="post-date">1d</div>
+          </div>
+        </div>
+      </div>
+      <img src="me.jpg" alt="" class="post-picture">
+      <div class="post-footer">
+        <div class="post-likes">
+          <span class="post-likes-num">41</span>
+          <span class="post-likes-text">likes</span>
+        </div>
+        <div class="post-comment">
+          <span class="post-username">pavank</span>
+          I mustache you a question, but I'll shave it for later
+        </div>
+        <hr>
+        <div class="post-like-comment">
+          <button class="like-button"></button>
+          <input type="text" class="post-add-comment" placeholder="Add a comment...">
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
   {{> atNavButton }}
 </template>
