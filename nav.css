@@ -36,3 +36,21 @@
 .logo {
   height: 30px;
 }
+
+.log-out {
+  color: #000;
+  margin-left: 15px;
+}
+
+.log-out:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

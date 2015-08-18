@@ -69,13 +69,24 @@
   justify-content: left;
 }
 
-.like-button {
+.unliked {
   background: none;
   outline: 0;
   border: 0;
   background-image: url(https://instagramstatic-a.akamaihd.net/bluebar/61d683a/cache/sprites/core-sprites-175663.png);
   background-repeat: no-repeat;
   background-position: -392px -92px;
+  height: 44px;
+  width: 44px;
+}
+
+.liked {
+  background: none;
+  outline: 0;
+  border: 0;
+  background-image: url(https://instagramstatic-a.akamaihd.net/bluebar/61d683a/cache/sprites/core-sprites-175663.png);
+  background-repeat: no-repeat;
+  background-position: -386px -268px;
   height: 44px;
   width: 44px;
 }

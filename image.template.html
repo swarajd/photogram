@@ -1,0 +1,34 @@
+<template name="Image">
+  <div class="post">
+    <div class="post-header">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <img src="me.jpg" alt="" class="post-icon">
+          <span class="post-username">{{username}}</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="post-date">{{softDate}}</div>
+        </div>
+      </div>
+    </div>
+    <img src="{{imageURL}}" alt="" class="post-picture">
+    <div class="post-footer">
+      <div class="post-likes">
+        <span class="post-likes-num">{{likes}}</span>
+        <span class="post-likes-text">likes</span>
+      </div>
+      {{#each comments}}
+        {{>comment}}
+      {{/each}}
+      <hr>
+      <div class="post-like-comment">
+        {{#if likedByYou _id }}
+          <button class="liked" id="{{_id}}"></button>
+        {{else}}
+          <button class="unliked" id="{{_id}}"></button>
+        {{/if}}
+        <input type="text" class="post-add-comment" placeholder="Add a comment..." id="{{_id}}">
+      </div>
+    </div>
+  </div>
+</template>
